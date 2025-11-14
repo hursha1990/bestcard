@@ -1,15 +1,11 @@
 const Contact = () => {
   return (
-    <main >
+    <main>
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you! Whether you have questions, feedback, or partnership inquiries, reach out anytime.</p>
-      <section id="contact-icons">
-        <p><strong>Email:</strong> support@bestcard.com</p>
-        <p><strong>Phone:</strong> (636) 515-4567</p>
-        <p><strong>FaceBook:</strong> Facebook/bestcard.com</p>
-        <p><strong>Instagram:</strong> Bestcard$</p>
-
-      </section>
+      <p>
+        We'd love to hear from you! Whether you have questions, feedback, or
+        partnership inquiries, reach out anytime.
+      </p>
 
       <form>
         <label>Your Name:</label>
@@ -20,9 +16,23 @@ const Contact = () => {
 
         <label>Message:</label>
         <textarea placeholder="Type your message here..."></textarea>
-
         <button>Send Message</button>
       </form>
+
+      <section>
+        <p>
+          <strong>Email:</strong> support@bestcard.com
+        </p>
+        <p>
+          <strong>Phone:</strong> (636) 515-4567
+        </p>
+        <p>
+          <strong>FaceBook:</strong> Facebook/bestcard.com
+        </p>
+        <p>
+          <strong>Instagram:</strong> Bestcard$
+        </p>
+      </section>
     </main>
   );
 };

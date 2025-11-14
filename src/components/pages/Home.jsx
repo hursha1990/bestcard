@@ -1,6 +1,6 @@
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import CardPreview from "../layout/cardpreview";
+import CardPreview from "../layout/Cardpreview";
 
  const Home = () => {
   return (
