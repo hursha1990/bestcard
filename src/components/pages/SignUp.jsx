@@ -1,4 +1,4 @@
-export default function Signup() {
+const Signup = () => {
   return (
     <main>
       <h2>Create an Account</h2>
@@ -24,4 +24,5 @@ export default function Signup() {
       </form>
     </main>
   );
-}
+};
+export default Signup;
