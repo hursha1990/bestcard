@@ -1,8 +1,8 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import CardPreview from "../components/cardpreview";
+import Header from "../layout/Header";
+import Footer from "../layout/Footer";
+import CardPreview from "../layout/cardpreview";
 
-export default function Home() {
+ const Home = () => {
   return (
     <>
       <Header />
@@ -15,8 +15,12 @@ export default function Home() {
         </h3>
       </main>
       <CardPreview />
-      <br/>
+      <br />
       <Footer />
     </>
   );
-}
+};
+
+export default Home;
+
+

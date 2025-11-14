@@ -1,4 +1,4 @@
-export default function Login() {
+const Login = () => {
   return (
     <main>
       <h2>Login</h2>
@@ -16,4 +16,6 @@ export default function Login() {
       </form>
     </main>
   );
-}
+};
+
+export default Login;

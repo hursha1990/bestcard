@@ -1,12 +1,14 @@
-export default function Contact() {
+const Contact = () => {
   return (
-    <main>
+    <main >
       <h2>Contact Us</h2>
       <p>We'd love to hear from you! Whether you have questions, feedback, or partnership inquiries, reach out anytime.</p>
-      <section>
-        <p><strong>Email:</strong> bestbouns@yahoo.com</p>
+      <section id="contact-icons">
+        <p><strong>Email:</strong> support@bestcard.com</p>
         <p><strong>Phone:</strong> (636) 515-4567</p>
-        <p><strong>Address:</strong> 335 Aventura, Suite 200, St. Louis, MO</p>
+        <p><strong>FaceBook:</strong> Facebook/bestcard.com</p>
+        <p><strong>Instagram:</strong> Bestcard$</p>
+
       </section>
 
       <form>
@@ -23,4 +25,6 @@ export default function Contact() {
       </form>
     </main>
   );
-}
+};
+
+export default Contact;

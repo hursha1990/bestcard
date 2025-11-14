@@ -1,6 +1,6 @@
-export default function About() {
+const About = () => {
   return (
-    <main style={{ padding: "2rem", maxWidth: "800px", margin: "auto", lineHeight: "1.6" }}>
+    <main >
       <h2>About </h2>
 
       <p>
@@ -49,4 +49,5 @@ export default function About() {
       </p>
     </main>
   );
-}
+};
+export default About; 

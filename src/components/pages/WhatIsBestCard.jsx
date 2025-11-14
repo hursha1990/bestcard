@@ -1,4 +1,4 @@
-export default function WhatIsBestCard() {
+const WhatIsBestCard = () => {
   return (
     <main>
       <h2>What Is BestCard</h2>
@@ -68,4 +68,5 @@ export default function WhatIsBestCard() {
       </p>
     </main>
   );
-}
+};
+export default WhatIsBestCard ;

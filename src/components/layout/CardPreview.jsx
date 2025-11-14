@@ -1,6 +1,6 @@
-import { mockCards } from "../data/mockCards";
+import { mockCards } from "../../data/mockCards";
 
-export default function CardPreview({ name, rewards }) {
+export default function CardPreview() {
   return (
     <div className="card-preview">
       {mockCards.map((card) => (
