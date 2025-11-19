@@ -1,6 +1,6 @@
 import { mockCards } from "../../data/mockCards";
 
-export default function CardPreview() {
+const CardPreview = () => { 
   return (
     <div className="card-preview">
       {mockCards.map((card) => (
@@ -11,4 +11,6 @@ export default function CardPreview() {
       ))}
     </div>
   );
-}
+};
+
+export default CardPreview;
