@@ -1,11 +1,7 @@
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
-import CardPreview from "../layout/Cardpreview";
-
- const Home = () => {
+import { Link } from "react-router-dom";
+const Home = () => {
   return (
     <>
-      <Header />
       <main>
         <h2>Swipe smart with BestCard</h2>
         <h3>
@@ -13,14 +9,22 @@ import CardPreview from "../layout/Cardpreview";
           Stop guessing. Start earning. Let BestCard find the card that truly
           fits you!{" "}
         </h3>
+        <img
+          src="/images/markus-winkler-ahjzVINkuCs-unsplash.jpg"
+          alt=""
+          class="img"
+          style={{
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            minHeight: "100vh",
+          }}
+        ></img>
+        <button>
+          <Link to="/landingA">Sign Up</Link>
+        </button>
       </main>
-      <CardPreview />
-      <br />
-      <Footer />
     </>
   );
 };
 
 export default Home;
-
-
