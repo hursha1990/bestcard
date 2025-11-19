@@ -1,9 +1,10 @@
-export default function Footer() {
+const Footer = () => {
+  let thisYear = new Date().getFullYear();
   return (
     <footer>
-      <p>
-        © 2025 BestCard <br/>
-      </p>
+      <div>&copy; {thisYear} BestCard</div>
     </footer>
   );
-}
+};
+
+export default Footer;

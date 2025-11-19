@@ -1,0 +1,104 @@
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 18px rgba(11, 18, 29, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all .16s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+    background: rgba(6, 182, 212, 0.06);
+}
+
+/* Mobile (default) */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  padding: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+  width: 150px;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Tablet + Desktop */
+@media (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    width: auto;
+  }
+}
+/* Tablet / small desktop */
+@media (min-width: 768px) {
+  /* Show nav links horizontally */
+  .nav-links {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  .menu-toggle {
+    display: none;
+  } /* hide hamburger */
+
+  /* Hero side-by-side */
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+  }
+  .hero .hero-text {
+    flex: 1;
+  }
+  .hero .hero-image {
+    flex: 1;
+  }
+
+  /* Cards - 2 columns */
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* Contact icons - 2 columns */
+  #contact-icons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

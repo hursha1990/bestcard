@@ -1,8 +1,12 @@
-export default function Header() {
+const Header = () => {
   return (
     <header>
-      <h1>BestCard</h1>
-      {/* <p>Find your perfect credit card match.</p> */}
+      <div>
+        <strong>BestCard</strong>
+        {/* <img src="/images/markus-winkler-ahjzVINkuCs-unsplash.jpg" alt="" class="img"></img> */}
+      </div>
     </header>
   );
-}
+};
+
+export default Header;
