@@ -59,4 +59,79 @@
   border: 1px solid rgba(11,18,29,0.06);
 }
 
+/* LandingPageA: search and discount card styles */
+.search-row {
+  margin: 1rem 0;
+}
+.search-label {
+  margin-right: 8px;
+}
+.search-input {
+  padding: 6px 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.discount-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 420px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  margin-top: 1rem;
+}
+.discount-tracker-title {
+  margin: 0 0 .5rem 0;
+}
+.discount-desc {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-size: .9rem;
+}
+.discount-list {
+  display: grid;
+  gap: .75rem;
+}
+.discount-item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.discount-item-label { font-size: .95rem; }
+.discount-item-pct { font-size: .85rem; color: #333; }
+.discount-track {
+  background: #eee;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.discount-fill {
+  height: 100%;
+  transition: width .4s ease;
+}
+
+/* Home hero layout */
+.home-hero { padding: 40px 16px; }
+.hero-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 520px 1fr;
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+}
+.hero-col{ padding: 12px }
+.hero-center{ display:flex; flex-direction:column; align-items:center; text-align:center }
+.hero-center h1{ font-size: 3rem; margin:0 0 12px; width:100% }
+.hero-center .accent{ color:#524ff1 }
+.lead{ color:#333; max-width:520px; margin:0 auto 18px }
+.btn-primary{ display:inline-block; background:#524ff1; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none }
+.hero-image{ width:420px; max-width:200%; margin:20px auto 0; display:block }
+.message{ font-size:0.9rem; color:#222; max-width:240px; margin:0 auto }
+.message p{ margin:0 0 160px }
+.no-wrap{ white-space: nowrap; }
+
 

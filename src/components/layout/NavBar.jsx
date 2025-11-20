@@ -11,38 +11,31 @@ const NavBar = () => {
 
       {/* <button className="hamburger" onClick={() => setOpen(!open)}>
         ☰
-      </button> */}
-{/* 
+      </button>
+
       <div>
         <ul className={`nav-links ${open ? "open" : ""}`}>
-          <Link to="/" onClick={() => setOpen(false)}>
-            Home
-          </Link>
+          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
 
-          <Link to="/what-is-bestcard" onClick={() => setOpen(false)}>
-            What Is BestCard
-          </Link>
+          <Link to="/what-is-bestcard" onClick={() => setOpen(false)}>What Is BestCard</Link>
 
-          <Link to="/about" onClick={() => setOpen(false)}>
-            About
-          </Link>
+          <Link to="/about" onClick={() => setOpen(false)}>About</Link>
 
-          <Link to="/contact" onClick={() => setOpen(false)}>
-            Contact
-          </Link>
+          <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          
+          <Link to="/signup">Sign Up</Link> {" "}
+          <Link to="/login">Login</Link> 
+
         </ul>
       </div> */}
 
       <div className="navbar">
-             <Link to="/">Home</Link> {" "}
+        <Link to="/">Home</Link> {" "}
         <Link to="/what-is-bestcard">What Is BestCard</Link> {" "}
         <Link to="/about">About</Link> {" "}
         <Link to="/contact">Contact</Link>{" "}
         <Link to="/signup">Sign Up</Link> {" "}
-        <Link to="/login">Login</Link>
-        {/* <Link to="/landingA">LandingPageA</Link> */}
-        <Link to="/landingB">LandingPageB</Link>
-            
+        <Link to="/login">Login</Link>      
         </div>
     </nav>
   );
