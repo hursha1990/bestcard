@@ -1,29 +1,52 @@
 import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
-    <>
-      <main>
-        <h2>Swipe smart with BestCard</h2>
-        <h3>
-          {" "}
-          Stop guessing. Start earning. Let BestCard find the card that truly
-          fits you!{" "}
-        </h3>
-        <img
-          src="/images/markus-winkler-ahjzVINkuCs-unsplash.jpg"
-          alt=""
-          class="img"
-          style={{
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            minHeight: "100vh",
-          }}
-        ></img>
-        <button>
-          <Link to="/landingA">Sign Up</Link>
-        </button>
-      </main>
-    </>
+    <main className="home-hero">
+      <div className="hero-inner">
+        <div className="hero-col hero-left">
+          <blockquote className="message">
+            <p>
+              "BestCard is a smart credit card comparison tool designed to help
+              users find their ideal card based on spending habits, lifestyle,
+              and goals."
+            </p>
+          </blockquote>
+        </div>
+
+        <div className="hero-col hero-center">
+          <h1>
+            <span className="no-wrap">
+              Stop guessing. <span className="accent">Start earning.</span>
+            </span>
+          </h1>
+
+          <p className="lead">
+            BestCard recommends the best credit card for your spending and keeps
+            your data private.
+          </p>
+
+          <Link to="/signup" className="btn-primary">
+            Sign up
+          </Link>
+
+          <img
+            src="/images/bestcard.png"
+            alt="BestCard"
+            className="hero-image"
+          />
+        </div>
+
+        <div className="hero-col hero-right">
+          <blockquote className="message">
+            <p>
+              "With BestCard, choosing the right card is no longer a guessing
+              game—it's data-driven and simple.."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </main>
   );
 };
 

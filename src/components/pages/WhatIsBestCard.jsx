@@ -13,7 +13,7 @@ const WhatIsBestCard = () => {
         <li>Track bonuses, offers, and reward expiration dates.</li>
       </ol>
       <p>
-        With BestCard, choosing the right card is no longer a guessing game—it’s
+        With BestCard, choosing the right card is no longer a guessing game—it's
         data-driven and simple.
       </p>
       <p>
@@ -21,13 +21,13 @@ const WhatIsBestCard = () => {
         BestCard is an intelligent, user-friendly credit card recommendation and
         management platform built to help users make smarter financial
         decisions. The app is designed to simplify the overwhelming process of
-        choosing and managing credit cards by analyzing a user’s preferences,
+        choosing and managing credit cards by analyzing a user's preferences,
         spending patterns, and lifestyle goals.
       </p>
       <p>
         {" "}
         Many people struggle to understand which credit card offers the best
-        value for their unique needs — whether it’s maximizing cashback, earning
+        value for their unique needs — whether it's maximizing cashback, earning
         travel points, or building credit responsibly. BestCard aims to solve
         this problem by providing personalized recommendations, reward tracking,
         and spending insights — all in one easy-to-use interface.
@@ -60,9 +60,9 @@ const WhatIsBestCard = () => {
         users to take control of their credit card choices.
       </p>
       <p>
-        In short, BestCard is more than just a comparison tool — it’s a personal
+        In short, BestCard is more than just a comparison tool — it's a personal
         finance companion that learns from you, grows with you, and helps you
-        get the most out of every purchase. Whether you’re a beginner building
+        get the most out of every purchase. Whether you're a beginner building
         credit or a seasoned cardholder chasing the best rewards, BestCard gives
         you the confidence to make smarter spending decisions.
       </p>
