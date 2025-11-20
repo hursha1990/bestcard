@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="auth-page">
@@ -14,7 +16,9 @@ const Login = () => {
             <br />
             <br />
 
-            <button>Login</button>
+            <Link to="/landingA">
+              <button>Login</button>
+            </Link>
 
             <p>
               Don't have an account? <a href="/signup">SignUp here</a>.
