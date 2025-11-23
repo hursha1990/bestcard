@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "../common/Button";
 
 const Home = () => {
   return (
@@ -26,8 +27,8 @@ const Home = () => {
             your data private.
           </p>
 
-          <Link to="/signup" className="btn-primary">
-            Sign up
+          <Link to="/signup">
+            <Button className="btn-primary">Sign Up</Button>
           </Link>
 
           <img

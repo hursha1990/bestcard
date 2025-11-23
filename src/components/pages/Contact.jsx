@@ -1,3 +1,5 @@
+import Button from "../common/Button";
+
 const Contact = () => {
   return (
     <main>
@@ -16,7 +18,7 @@ const Contact = () => {
 
         <label>Message:</label>
         <textarea placeholder="Type your message here..."></textarea>
-        <button>Send Message</button>
+        <Button className="btn-primary" type="submit">Send Message</Button>
       </form>
 
       <section>
