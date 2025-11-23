@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Button from "../common/Button";
+
 const Signup = () => {
   return (
     <div className="auth-page">
@@ -26,7 +29,10 @@ const Signup = () => {
             <br />
             <br />
 
-            <button>Sign Up</button>
+            <Link to="/login">
+              <Button className="btn-primary">Sign Up</Button>
+            </Link>
+
             <p>
               Already have an account? <a href="/login">Login here</a>.
             </p>
@@ -36,4 +42,5 @@ const Signup = () => {
     </div>
   );
 };
+
 export default Signup;

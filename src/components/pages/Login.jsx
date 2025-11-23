@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "../common/Button";
 
 const Login = () => {
   return (
@@ -17,7 +18,7 @@ const Login = () => {
             <br />
 
             <Link to="/landingA">
-              <button>Login</button>
+              <Button className="btn-primary">Login</Button>
             </Link>
 
             <p>
