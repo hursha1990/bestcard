@@ -1,15 +1,15 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./layout.css";
 
 const NavBar = () => {
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <h1 className="logo">BestCard</h1>
 
-      {/* <button className="hamburger" onClick={() => setOpen(!open)}>
+      <button className="hamburger" onClick={() => setOpen(!open)}>
         ☰
       </button>
 
@@ -27,16 +27,16 @@ const NavBar = () => {
           <Link to="/login">Login</Link> 
 
         </ul>
-      </div> */}
+      </div>
 
-      <div className="navbar">
+      {/* <div className="navbar">
         <Link to="/">Home</Link> {" "}
         <Link to="/what-is-bestcard">What Is BestCard</Link> {" "}
         <Link to="/about">About</Link> {" "}
         <Link to="/contact">Contact</Link>{" "}
         <Link to="/signup">Sign Up</Link> {" "}
         <Link to="/login">Login</Link>      
-        </div>
+        </div> */}
     </nav>
   );
 };
