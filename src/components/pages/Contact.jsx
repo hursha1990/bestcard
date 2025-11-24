@@ -1,6 +1,19 @@
+import React, { useState, useRef } from "react";
 import Button from "../common/Button";
 
 const Contact = () => {
+  const [sent, setSent] = useState(false);
+  const formRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // show confirmation message and reset form fields
+    setSent(true);
+    formRef.current?.reset();
+    // hide message after a short delay
+    setTimeout(() => setSent(false), 3500);
+  };
+
   return (
     <main>
       <h2>Contact Us</h2>
@@ -9,17 +22,24 @@ const Contact = () => {
         partnership inquiries, reach out anytime.
       </p>
 
-      <form>
+      <form ref={formRef} onSubmit={handleSubmit}>
         <label>Your Name:</label>
-        <input type="text" placeholder="Enter your name" />
+        <input type="text" name="name" placeholder="Enter your name" />
 
         <label>Your Email:</label>
-        <input type="email" placeholder="Enter your email" />
+        <input type="email" name="email" placeholder="Enter your email" />
 
         <label>Message:</label>
-        <textarea placeholder="Type your message here..."></textarea>
+        <textarea name="message" placeholder="Type your message here..."></textarea>
         <Button className="btn-primary" type="submit">Send Message</Button>
       </form>
+
+      {/* Live region for screen readers and visual confirmation */}
+      {sent && (
+        <div className="success-text" role="status" aria-live="polite">
+          Your response has been sent
+        </div>
+      )}
 
       <section>
         <p>
