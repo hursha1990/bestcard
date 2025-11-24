@@ -5,7 +5,6 @@ import WhatIsBestCard from "./components/pages/WhatIsBestCard";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import LandingPageA from "./components/pages/LandingPageA";
-import LandingPageB from "./components/pages/LandingPageB";
 import Signup from "./components/pages/Signup";
 import Login from "./components/pages/Login";
 import NavBar from "./components/layout/NavBar";
@@ -25,17 +24,13 @@ export default function App() {
       </nav> */}
       <div className="NavBar">
         <NavBar />
-        {/* <main className="content"> */}
-          {/*  */}
-          
-        {/* </main> */}
+        {/* <main className="content"></main> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/what-is-bestcard" element={<WhatIsBestCard />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/landingA" element={<LandingPageA />} />
-          <Route path="/landingB" element={<LandingPageB />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
         </Routes>
