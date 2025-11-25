@@ -31,7 +31,7 @@ body {
 }
 
 /* RESPONSIVE TWEAKS */
-@media (max-width:520px) {
+@media (max-width:300px) {
     nav {
         overflow: auto;
         white-space: nowrap;
@@ -40,4 +40,15 @@ body {
     header {
         padding: 28px 12px;
     }
+}
+
+/* Additional responsive breakpoints */
+@media (max-width:800px) {
+    .home-hero { padding: 28px 12px }
+    main { padding: 0 12px }
+}
+
+@media (max-width:360px) {
+    body { font-size: 14px }
+    header { padding: 18px 8px }
 }
