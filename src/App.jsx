@@ -5,7 +5,7 @@ import WhatIsBestCard from "./components/pages/WhatIsBestCard";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import LandingPageA from "./components/pages/LandingPageA";
-import Signup from "./components/pages/Signup";
+import Signup from "./components/pages/SignUp";
 import Login from "./components/pages/Login";
 import NavBar from "./components/layout/NavBar";
 import Footer from "./components/layout/Footer";
