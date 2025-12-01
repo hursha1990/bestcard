@@ -47,15 +47,6 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-
-      {/* <div className="navbar">
-        <Link to="/">Home</Link> {" "}
-        <Link to="/what-is-bestcard">What Is BestCard</Link> {" "}
-        <Link to="/about">About</Link> {" "}
-        <Link to="/contact">Contact</Link>{" "}
-        <Link to="/signup">Sign Up</Link> {" "}
-        <Link to="/login">Login</Link>      
-        </div> */}
     </nav>
   );
 };

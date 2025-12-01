@@ -61,8 +61,6 @@ const LandingPageA = () => {
 
   return (
     <main>
-      {/* <h2>Landing Page A</h2> */}
-
       <div className="search-row">
         <label htmlFor="card-search" className="search-label">
           Search cards:

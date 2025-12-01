@@ -25,7 +25,7 @@ const AddCardModal = ({ isOpen, onClose, onAdd, initialData = null, onUpdate }) 
       // focus first field for accessibility
       setTimeout(() => nameRef.current?.focus(), 0);
     }
-  }, [isOpen]);
+  }, [initialData, isOpen]);
 
   if (!isOpen) return null;
 
