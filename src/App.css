@@ -1,10 +1,12 @@
 footer {
     flex: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     text-align: center;
-    padding: 15px clamp(20px, 4vw, 30px) 20px;
     color: white   ;
     background: #111;
-    font-size: 0.9rem;
+    font-size: 13px;
     margin-top: 50px;
     width: 100%;
     display: flex;
