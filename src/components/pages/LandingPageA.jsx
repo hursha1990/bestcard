@@ -41,11 +41,10 @@ const LandingPageA = () => {
     }
   }, [cards]);
 
-  // derive discount items from cards state instead of hard-coded values
   const colorPalette = [
     "#d9534f",
     "#f0ad4e",
-    "#0275d8",
+    "#0275d8", 
     "#20c997",
     "#28a745",
     "#8f6076ff",
@@ -148,15 +147,13 @@ const LandingPageA = () => {
             <div key={item.id}>
               <div className="discount-item-row">
                 <span className="discount-item-label">{item.label}</span>
-                <span className="discount-item-pct">
-                  {item.pct === 10 ? "Complete!" : `${item.pct}%`}
-                </span>
+                <span className="discount-item-pct">{`${item.pct}%`}</span>
               </div>
 
               <div className="discount-track">
                 <div
                   className="discount-fill"
-                  style={{ width: `${item.pct}%`, background: item.color }}
+                  style={{ width: `${item.pct * 10}%`, background: item.color }}
                 />
               </div>
             </div>
